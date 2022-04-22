@@ -36,4 +36,4 @@ Setup project:
 8. You can edit LCD messages of your prefering or you like, such as "YUKSEKSICAKLIK" as a "HIGH TEMP".
 9. USART handle type definition variable &huart1 sends measurement variable level, sicaklik means temperature, yukseklik as altitude, basinc as pressure. You can change which you like. 
 
-
+PS: THANK YOU, Nokia5110LCD and BMP180 library's owner to share with us their library.
