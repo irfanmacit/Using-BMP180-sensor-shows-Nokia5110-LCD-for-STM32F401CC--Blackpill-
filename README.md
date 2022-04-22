@@ -1,4 +1,4 @@
-# BMP180 sensor for STM32F401CC (Blakpill)
+# BMP180 sensor for STM32F401CC (Blackpill)
  This projeck is for STM32F401CC development board.
 Setup project:
   1. BMP180 sensor
