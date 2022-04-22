@@ -16,4 +16,23 @@ Setup project:
            CLK                      PA07                     LCD_CLK
            
 4. If you see measuments of the sensor, you can see it on your serial terminal by using USBTTL (there are many USBTTL tool such as CH340, PL2303 chipset), after you connect from the STM32 board to computer. Connection from STM32 board to computer you can use PA09 Tx --> USBTTL Rx and PA10 Rx --> USBTTL Tx port and then open your terminal window and data seems on the terminal. 
-5. If you download my python interface for this project and properly setup this software you can see three important sensor data on the dashboard (coming soon). 
+5. If you download my python interface for this project and properly setup this software you can see three important sensor data on the dashboard (coming soon).
+6. STM32F401CC board has a PC13 internal LED, while program running this blue LED is ON when the temperature level under 30.0 degree Celcius. If temperature level is more than 30.0 degree Celcius PA1 port is on, if you connect a LED for this port, it will be on when the temperature is more than 30. degree Celcius.  
+7. You can change degree of the LED's on level sicaklik variable.
+
+
+                       if(sicaklik > 30 )
+              {
+               HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+               HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
+               LCD_print("YUKSEKSICAKLIK", 0, 5);
+              }
+              else
+              {
+               HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+               HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_RESET);
+               LCD_print("==============", 0, 5);
+	}
+
+
+
