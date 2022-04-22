@@ -1,4 +1,4 @@
-# BMP180 sensor for STM32F401CC (Blackpill)
+# Using BMP180 sensor shows on Nokia5110 LCD for STM32F401CC (Blackpill)
  This projeck is for STM32F401CC development board.
 Setup project:
   1. BMP180 sensor
