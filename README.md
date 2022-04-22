@@ -15,3 +15,5 @@ Setup project:
            DIN                      PA06                     LCD_DATA
            CLK                      PA07                     LCD_CLK
            
+4. If you see measuments of the sensor, you can see it on your serial terminal by using USBTTL (there are many USBTTL tool such as CH340, PL2303 chipset), after you connect from the STM32 board to computer. Connection from STM32 board to computer you can use PA09 Tx --> USBTTL Rx and PA10 Rx --> USBTTL Tx port and then open your terminal window and data seems on the terminal. 
+5. If you download my python interface for this project and properly setup this software you can see three important sensor data on the dashboard (coming soon). 
